@@ -88,7 +88,7 @@ body {
   .profile{
     @apply
     w-12 h-12 aspect-square
-    bg-[url('../public/dogukandogu.jpeg')]
+    bg-[url('https://avatars.githubusercontent.com/u/30083415?v=4')]
     bg-purple-600
     bg-contain bg-no-repeat bg-center
     rounded-[2.563rem]
