@@ -39,7 +39,7 @@ body {
     flex flex-col w-[43.75rem]
     justify-between items-center
     py-[3.125rem] px-[3.125rem]
-    max-w-full
+    
     overflow-visible content-start flex-nowrap
     gap-[3.125rem] mx-auto
   }
@@ -103,7 +103,7 @@ body {
   }
   .section {
     @apply flex flex-row justify-start items-start w-[43.75rem]
-     py-[3.125rem] px-[3.125rem] max-w-full 
+     py-[3.125rem] px-[3.125rem] 
      overflow-visible content-start flex-wrap 
      gap-[3.75rem] mx-auto border-t border-solid outline-[#222222]
   }
