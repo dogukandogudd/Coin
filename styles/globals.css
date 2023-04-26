@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -8,7 +10,7 @@
   --background-end-rgb: 255, 255, 255;
 }
 
-@media (prefers-color-scheme: dark) {
+/* @media (prefers-color-scheme: white) {
   :root {
     --foreground-rgb: 255, 255, 255;
     --background-start-rgb: 0, 0, 0;
@@ -24,4 +26,123 @@ body {
       rgb(var(--background-end-rgb))
     )
     rgb(var(--background-start-rgb));
+} */
+
+@layer base {
+  html {
+    @apply bg-white
+
+  }
+  
+  header{
+    @apply
+    flex flex-col w-[43.75rem]
+    justify-between items-center
+    py-[3.125rem] px-[3.125rem]
+    max-w-full
+    overflow-visible content-start flex-nowrap
+    gap-[3.125rem] mx-auto
+  }
+  h2{
+    @apply
+    font-semibold
+    text-xl
+    leading-normal
+    text-left
+  }
+  h3{
+    @apply
+    font-semibold
+    text-xl
+    text-left
+  }
+  p{
+    @apply
+    font-medium
+    text-[#666666]
+    text-left 
+    text-sm
+  }
+  img{
+    @apply
+    w-[3.25rem] h-[3.25rem]
+    bg-none
+    bg-no-repeat bg-center bg-cover
+    rounded-full
+  }
+}
+
+@layer components {
+  .top-section{
+    @apply
+    w-full flex flex-row
+    justify-between items-center
+    gap-[3.125rem]
+  }
+  .footer-section{
+    @apply
+    w-full flex flex-row
+    justify-center items-center
+    gap-4
+  }
+  .profile{
+    @apply
+    w-12 h-12 aspect-square
+    bg-[url('../public/dogukandogu.jpeg')]
+    bg-purple-600
+    bg-contain bg-no-repeat bg-center
+    rounded-[2.563rem]
+  }
+  .social{
+    @apply
+    w-12 h-12 px-3 py-3
+    bg-[#F2F2F2] 
+    overflow-visible 
+    content-center flex-nowrap
+    gap-[0.625rem] rounded-[2.563rem]
+  }
+  .section {
+    @apply flex flex-row justify-start items-start w-[43.75rem]
+     py-[3.125rem] px-[3.125rem] max-w-full 
+     overflow-visible content-start flex-wrap 
+     gap-[3.75rem] mx-auto border-t border-solid outline-[#222222]
+  }
+  .bookmarks{
+    @apply
+    flex flex-col justify-start w-[37.5rem]
+    items-start overflow-visible content-start flex-nowrap
+    gap-5 rounded-[1.75rem]
+  }
+  .bookmark{
+    @apply
+    flex justify-start items-start content-start flex-nowrap
+    rounded-[1.25rem]  w-[37.5rem] h-[3.25rem] gap-5
+  }
+  .frame{
+    @apply
+    w-[3.25rem] h-[3.25rem]
+    bg-purple-300
+    bg-no-repeat bg-center bg-cover
+    rounded-full
+  }
+  .frame-h{
+    @apply
+    w-[3.25rem] h-[3.25rem]
+    bg-purple-300
+    bg-no-repeat bg-center bg-cover
+    rounded-full
+  }
+  .frameOpt{
+    @apply
+    w-[3.25rem] h-[3.25rem] px-3 py-3 
+    bg-none
+    overflow-visible 
+    content-center flex-nowrap
+    gap-[0.625rem] rounded-[2.563rem]
+  }
+  .information{
+    @apply
+    w-[24rem] 
+  }
+ 
 }
