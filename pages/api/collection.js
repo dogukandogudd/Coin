@@ -448,6 +448,39 @@ export default function handler(req, res) {
         observe:
           "https://i.ucoin.net/coin/32/919/32919058-1/germany-2-euro-2002.jpg",
       },
+      {
+        id: 42,
+        countryId: 13,
+        denomination: "1 Eurocent",
+        description: "New added to the collection",
+        year: 2004,
+        reverse:
+          "https://i.ucoin.net/coin/49/434/49434310-2/austria-1-euro-cent-2004.jpg",
+        observe:
+          "https://i.ucoin.net/coin/49/434/49434310-1/austria-1-euro-cent-2004.jpg",
+      },
+      {
+        id: 43,
+        countryId: 12,
+        denomination: "1 Eurocent",
+        description: "New added to the collection",
+        year: 2002,
+        reverse:
+          "https://i.ucoin.net/coin/58/807/58807463-2/germany-1-euro-cent-2002.jpg",
+        observe:
+          "https://i.ucoin.net/coin/58/807/58807463-1/germany-1-euro-cent-2002.jpg",
+      },
+      {
+        id: 44,
+        countryId: 14,
+        denomination: "2 Eurocent",
+        description: "New added to the collection",
+        year: 2016,
+        reverse:
+          "https://i.ucoin.net/coin/9/215/9215591-2/italy-2-euro-cent-2016.jpg",
+        observe:
+          "https://i.ucoin.net/coin/9/215/9215591-1/italy-2-euro-cent-2016.jpg",
+      },
     ],
     countries: [
       {
@@ -509,6 +542,16 @@ export default function handler(req, res) {
         id: 12,
         countryName: "Germany",
         seoUrl: "germany",
+      },
+      {
+        id: 13,
+        countryName: "Austria",
+        seoUrl: "austria",
+      },
+      {
+        id: 14,
+        countryName: "Italy",
+        seoUrl: "italy",
       },
     ],
   });

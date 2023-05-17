@@ -25,7 +25,7 @@ const user = {
 
 export async function getStaticProps(context) {
   // fetch the blog posts from the mock API
-  // const res = await fetch("http://localhost:3000/api/datas");
+  // const res = await fetch("http://localhost:3000/api/collection");
   const res = await fetch("https://coin-catalog.vercel.app/api/collection");
   const posts = await res.json();
 
